@@ -7,6 +7,12 @@ $border-dark: rgba($base-color, 0.88);
 $light-green: #7ed56f;
 $medium-green: #55c57a;
 $dark-green: #28b485;
+$dark-gray: #201d1d;
+$medium-gray: #2e3033;
+$dark-blue: #111f47;
+$medium-blue: #1f3049;
+$dark-purple: #421147;
+$medium-purple: #5e1d5e;
 $font-normal: 62.5%;
 $font-normal-larger: $font-normal * 1.4;
 $line-height-normal: 1.7;
@@ -24,7 +30,7 @@ body {
   color: $base-color;
   font-family: $font-primary;
   line-height: $line-height-normal;
-  padding: 3rem;
+  padding: 1rem;
 }
 h1,
 h2,
@@ -37,4 +43,67 @@ h6 {
 
 a {
   color: $dark-green;
+}
+
+// *********
+// HEADER
+// *********
+
+.header {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($dark-purple, 0.8),
+      rgba($medium-blue, 0.8),
+      // rgba($dark-blue, 0.8),
+      // rgba($medium-blue, 0.8),
+      // rgba($dark-gray, 0.8),
+      // rgba($medium-gray, 0.8),
+      // rgba($light-green, 0.6),
+      // rgba($dark-green, 0.6),
+      // rgba(126, 213, 111, 0.8),
+      // rgba(40, 180, 131, 0.8)
+    ),
+    url("../images/gorilla-2000-medium.jpg");
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80vh, 0% 100%);
+  position: relative;
+}
+
+.logo-box {
+  color: $bgc;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo {
+  height: 30px;
+}
+
+.message-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading {
+  color: $bgc;
+}
+
+.heading-top {
+  display: block;
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: 35px;
+  text-transform: uppercase;
+  color: rgba($bgc, 0.1);
+}
+
+.heading-bottom {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 16px;
+  text-transform: uppercase;
 }
