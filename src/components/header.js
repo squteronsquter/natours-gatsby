@@ -20,6 +20,9 @@ export default function Header() {
             <span className="heading-top">outdoors</span>
             <span className="heading-bottom">is where life happens</span>
           </h1>
+          <a href="https://dms.codes" class="btn btn-white">
+            Discover articles
+          </a>
         </div>
       </header>
     </>
