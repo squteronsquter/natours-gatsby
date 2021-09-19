@@ -100,6 +100,7 @@ a {
   color: rgba($bgc, 0.1);
   animation-name: moveInLeft;
   animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 
 .heading-bottom {
@@ -108,6 +109,10 @@ a {
   font-weight: 700;
   letter-spacing: 16px;
   text-transform: uppercase;
+  animation-name: moveInRight;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 4s;
 }
 
 @keyframes moveInLeft {
@@ -117,6 +122,20 @@ a {
   }
   80% {
     transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-20px);
   }
   100% {
     opacity: 1;
