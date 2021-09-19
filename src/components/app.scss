@@ -78,7 +78,7 @@ a {
   left: 40px;
 }
 .logo {
-  height: 30px;
+  height: 60px;
 }
 
 .message-box {
@@ -89,7 +89,11 @@ a {
 }
 .heading {
   color: $bgc;
+  backface-visibility: hidden;
 }
+// .heading:hover {
+//   animation: moveInRight 1s ease-out;
+// }
 
 .heading-top {
   display: block;
