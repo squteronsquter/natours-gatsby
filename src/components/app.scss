@@ -98,6 +98,8 @@ a {
   letter-spacing: 35px;
   text-transform: uppercase;
   color: rgba($bgc, 0.1);
+  animation-name: moveInLeft;
+  animation-duration: 3s;
 }
 
 .heading-bottom {
@@ -106,4 +108,18 @@ a {
   font-weight: 700;
   letter-spacing: 16px;
   text-transform: uppercase;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
